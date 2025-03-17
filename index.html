@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 
-   <style>
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -41,8 +41,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         .intro.membesar {
@@ -138,14 +145,27 @@
         }
 
         @keyframes fly {
-            0% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(15deg); }
-            100% { transform: translateY(0) rotate(0deg); }
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(15deg);
+            }
+
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
         }
 
         @keyframes fadeOut {
-            0% { opacity: 1; }
-            100% { opacity: 0; }
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
         }
 
         .kontrol-musik {
@@ -171,17 +191,17 @@
     </div>
     <div class="undangan" id="undangan">
         <h2>Undangan</h2>
-        <img src="assets/pengantin.jpg" alt="Foto Pengantin" class="foto-pengantin">
+        <img src="assets/awal.jpeg" alt="Foto Pengantin" class="foto-pengantin">
         <p>Dengan penuh rasa syukur, kami mengundang Anda untuk menghadiri pernikahan kami.</p>
 
         <div>
-            <img src="assets/pria.jpg" alt="Mempelai Pria" class="foto-mempelai">
+            <img src="assets/pria.jpeg" alt="Mempelai Pria" class="foto-mempelai">
             <p class="nama-mempelai">Ardiansah Putra</p>
             <p>Bin Imron</p>
         </div>
 
         <div>
-            <img src="assets/wanita.jpg" alt="Mempelai Wanita" class="foto-mempelai">
+            <img src="assets/wanita.jpeg" alt="Mempelai Wanita" class="foto-mempelai">
             <p class="nama-mempelai">Zaidah</p>
             <p>Binti Imron</p>
         </div>
@@ -191,10 +211,10 @@
 
         <h3>Galeri Pernikahan</h3>
         <div class="galeri">
-            <img src="assets/1.jpg" alt="Galeri 1">
-            <img src="assets/2.jpg" alt="Galeri 2">
-            <img src="assets/4.jpg" alt="Galeri 3">
-            <img src="assets/5.jpg" alt="Galeri 4">
+            <img src="assets/home (2).jpeg" alt="Galeri 1">
+            <img src="assets/home (3).jpeg" alt="Galeri 2">
+            <img src="assets/home (4).jpeg" alt="Galeri 3">
+            <img src="assets/home (5).jpeg" alt="Galeri 4">
         </div>
 
         <div class="map-container">
@@ -205,7 +225,8 @@
         </div>
 
         <audio id="musik" loop>
-            <source src="assets/audio/Bunga Citra Lestari - Cinta Sejati [ lirik ](MP3_160K) (mp3cut.net).mp3" type="audio/mpeg">
+            <source src="assets/audio/Bunga Citra Lestari - Cinta Sejati [ lirik ](MP3_160K) (mp3cut.net).mp3"
+                type="audio/mpeg">
             Browser Anda tidak mendukung audio.
         </audio>
 
@@ -234,7 +255,7 @@
         }
         document.addEventListener("scroll", () => {
             const butterfly = document.createElement("img");
-            butterfly.src = "assets/butterfly.png"; // Ganti dengan gambar kupu-kupu
+            butterfly.src = "assets/hati1.png"; // Ganti dengan gambar kupu-kupu
             butterfly.classList.add("butterfly");
             document.body.appendChild(butterfly);
 
